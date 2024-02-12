@@ -1,10 +1,18 @@
 <script>
+import AppHeader from './components/AppHeader.vue'
+import AppMain from './components/AppMain.vue'
+import AppFooter from './components/AppFooter.vue'
 export default {
-  name: 'AvadaFitness'
+  name: 'AvadaFitness',
+  components: { AppHeader, AppMain, AppFooter }
 }
 </script>
 
-<template></template>
+<template>
+  <AppHeader />
+  <AppMain />
+  <AppFooter />
+</template>
 
 <style lang="scss">
 @use './assets/scss/style.scss';
