@@ -5,6 +5,7 @@ export default {
 </script>
 
 <template>
+    <!-- Amarildo -->
     <h1>SONO L'HEADER</h1>
 </template>
 

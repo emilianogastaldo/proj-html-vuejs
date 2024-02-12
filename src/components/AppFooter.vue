@@ -5,6 +5,7 @@ export default {
 </script>
 
 <template>
+    <!-- Claudio -->
     <h1>SONO IL FOOTER</h1>
 </template>
 
