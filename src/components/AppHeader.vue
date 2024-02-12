@@ -1,9 +1,11 @@
 <script>
 import Navbar from './Navbar.vue'
+import Jumbotron from './Jumbotron.vue'
 export default {
     name: 'AppHeader'
     , components: {
-        Navbar
+        Navbar,
+        Jumbotron
     }
 }
 </script>
@@ -11,6 +13,7 @@ export default {
 <template>
     <!-- Amarildo -->
     <Navbar />
+    <Jumbotron />
     <h1>SONO L'HEADER</h1>
 </template>
 
