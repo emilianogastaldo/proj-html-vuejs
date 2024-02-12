@@ -1,7 +1,26 @@
-# Vue 3 + Vite
+Progetto HTML/VueJS
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Repo: proj-html-vuejs
 
-## Recommended IDE Setup
+Cosa fare
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+Lavorando in team e utilizzando gli strumenti di gitflow conosciuti (issues, branch, merge)
+riprodurre il layout proposto solo in versione Desktop
+
+Tecnologie da utilizzare
+● HTML
+● CSS / Scss
+● VueJs / Vite
+
+Requisiti tecnici minimi:
+Creare un progetto con Vite, strutturando il layout in almeno 3 macro-componenti:
+Header, Main e Footer.
+
+Scomporre poi le macro-aree in sezioni e componenti Vue.
+Popolare le voci di menù di Header e Footer dinamicamente, tramite delle props, creando
+una struttura dati idonea.
+
+Utilizzare un approccio analogo per i vari componenti che popolano le sezioni del Main.
+
+Deadline
+Mercoledì 14/02 ore 18.00
