@@ -1,6 +1,8 @@
 <script>
+import AppButton from './AppButton.vue';
 export default {
-    name: 'YoutubeChannel'
+    name: 'YoutubeChannel',
+    components: { AppButton }
 }
 </script>
 
@@ -27,7 +29,9 @@ export default {
                     venenatis, leo
                     integer sit
                     pellentesque.</p>
-                <button>Visit my YouTube channel</button>
+                <AppButton>
+                    <i class="fa-brands fa-youtube"></i> Visit my Youtube channel
+                </AppButton>
             </div>
         </div>
 
