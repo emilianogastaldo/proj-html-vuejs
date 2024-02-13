@@ -32,10 +32,10 @@ export default {
 .card {
     background-color: black;
     border: solid 3px #4154FF;
-    min-height: 350px;
-    max-width: 250px;
+    min-height: 450px;
+    max-width: 350px;
     cursor: pointer;
-    margin-top: 50px;
+    margin-top: 70px;
 }
 
 .card:hover {
@@ -45,7 +45,7 @@ export default {
 
 .icona {
     color: white;
-    margin-top: 30px;
+    margin-top: 70px;
 }
 
 
@@ -60,6 +60,8 @@ h6 {
 p {
     color: white;
     margin: 30px 0;
+    padding: 20px;
+    font-size: 20px;
 }
 
 a {

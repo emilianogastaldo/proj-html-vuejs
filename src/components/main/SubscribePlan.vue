@@ -27,7 +27,7 @@ export default {
 <style lang="scss" scoped>
 #subscribe-plan {
     background-color: black;
-    min-height: 500px;
+    min-height: 600px;
 }
 
 a {
