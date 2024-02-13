@@ -52,10 +52,8 @@ export default {
 
 <style lang="scss" scoped>
 #mainspotlight {
-
-    margin-top: 100px;
-    // togliere questa
     background: linear-gradient(to bottom right, #0215D8, #D70110);
+    padding-bottom: 100px;
 }
 
 .card-container {
