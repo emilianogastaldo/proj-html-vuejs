@@ -16,7 +16,7 @@ export default {
 <template>
     <section id="lastest-articles">
         <div class="container">
-            <div class="row">
+            <div class="row my-5">
                 <div class="col-6">
                     <h4 class="title">Latest articles</h4>
                 </div>
@@ -39,6 +39,7 @@ export default {
 .title {
     font-weight: 600;
 }
+
 
 a {
     text-decoration: none;
