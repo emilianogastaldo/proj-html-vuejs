@@ -1,9 +1,6 @@
 <script>
 export default {
     name: 'AppHeader',
-    props: {
-        label: String
-    }
 }
 </script>
 
@@ -19,5 +16,9 @@ button {
     border-radius: 50px;
     background-color: transparent;
     border: 1px solid currentColor;
+}
+
+button:hover {
+    background-color: #FF414B;
 }
 </style>

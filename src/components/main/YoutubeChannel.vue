@@ -29,7 +29,7 @@ export default {
                     venenatis, leo
                     integer sit
                     pellentesque.</p>
-                <AppButton>
+                <AppButton class="color-white bg-color-red">
                     <i class="fa-brands fa-youtube"></i> Visit my Youtube channel
                 </AppButton>
             </div>
@@ -41,6 +41,18 @@ export default {
 <style lang="scss" scoped>
 .color-blue {
     color: #4154ff;
+}
+
+.color-white {
+    color: white
+}
+
+.bg-color-red {
+    background-color: red;
+}
+
+.bg-color-blue {
+    background-color: #4154ff
 }
 
 .color-gray {
