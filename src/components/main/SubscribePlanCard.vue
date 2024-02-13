@@ -1,20 +1,29 @@
 <script>
+import { subPlan } from '../../data/index';
 export default {
-    name: 'SubscribePlanCard'
+    name: 'SubscribePlanCard',
+    data: () => ({
+        subPlan
+    }),
+    props: {
+        icon: String,
+        title: String,
+        subtitle: String,
+        paragrph: String,
+        link: String,
+        url: String
+    }
 }
 </script>
 
 <template>
-    <div class="col">
-        <div class="card text-center">
-            <div class="icona"><i class="fa-solid fa-stopwatch fa-2xl"></i></div>
-            <div class="card-body">
-                <h5 class="card-title">Team training</h5>
-                <h6>Find a partner</h6>
-                <p class="card-text">Vestibulum, curabitur eu sem nibh ultrices sit nulla adipiscing. Nisl sit
-                    fames amet senectus eget sed duis vehicula. Tristique.</p>
-                <a href="#">Find a partner <span><i class="fa-solid fa-chevron-right fa-2xs"></i></span></a>
-            </div>
+    <div class="card text-center">
+        <div class="icona"><i class="fa-solid fa-stopwatch fa-2xl" :class="icon"></i></div>
+        <div class="card-body">
+            <h5 class="card-title">{{ title }}</h5>
+            <h6>{{ subtitle }}</h6>
+            <p class="card-text">{{ paragrph }}</p>
+            <a href="#">{{ link }} <span><i class="fa-solid fa-chevron-right fa-2xs"></i></span></a>
         </div>
     </div>
 </template>
