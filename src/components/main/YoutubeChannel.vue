@@ -7,7 +7,7 @@ export default {
 </script>
 
 <template>
-    <section class="row my-4">
+    <section class="row my-5">
         <div class="col-6 position-relative">
             <div class="image-container">
                 <div class="position-relative">
@@ -64,16 +64,15 @@ export default {
     color: #98939F;
 }
 
-
-
 .image-container {
     height: 100%;
     position: absolute;
-    top: -150px;
+    top: -100px;
     left: 10px;
 
     img {
         border-radius: 0 5px 25px 0;
+        width: 90%;
     }
 }
 
@@ -100,7 +99,7 @@ export default {
 
 
 .text {
-
+    margin-bottom: 500px;
 
     h2 {
         font-size: 62px;

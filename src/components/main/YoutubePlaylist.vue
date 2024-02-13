@@ -15,7 +15,7 @@ export default {
         <div class="row justify-content-between h3 mb-5">
             <div class="col">Featured playlists</div>
             <div class="col text-end">
-                <a href="">View all videos
+                <a href="https://avada.website/fitness/playlists/">View all videos
                     <i class="fa-solid fa-angle-right"></i></a>
             </div>
         </div>
