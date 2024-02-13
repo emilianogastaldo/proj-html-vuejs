@@ -43,7 +43,7 @@ export default {
     background-position: top;
     color: white;
     text-align: center;
-    padding: 100px;
+    padding: 200px;
 }
 
 .content {
