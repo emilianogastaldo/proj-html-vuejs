@@ -9,7 +9,7 @@ export default {
         link: String
     },
     computed: {
-        ImagePath() {
+        imagePath() {
             const path = new URL(`../../assets/images/${this.img}`, import.meta.url);
             return path.href;
         }
@@ -19,7 +19,7 @@ export default {
 <template>
     <div class="card" style="width: 18rem;">
         <a :href="url">
-            <img :src="ImagePath" class="card-img-top" :alt="link">
+            <img :src="imagePath" class="card-img-top" :alt="link">
             <div class="card-body">
                 <h5 class="card-title d-flex justify-content-center"><i class="fa-solid fa-chevron-up"></i><i
                         class="fa-solid fa-chevron-up"></i><i class="fa-solid fa-chevron-up"></i></h5>
