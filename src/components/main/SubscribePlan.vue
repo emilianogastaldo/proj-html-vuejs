@@ -10,7 +10,7 @@ export default {
             <div class="row g-3 row-col-3">
                 <div class="col">
                     <div class="card text-center">
-                        <img src="..." class="card-img-top" alt="...">
+                        <img src="" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Team training</h5>
                             <h6>Find a partner</h6>
