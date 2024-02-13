@@ -71,7 +71,7 @@ button:hover {
 
 p {
     margin-top: 20px;
-    color: #85939f;
+    color: #98939F;
     font-size: 23px;
 }
 </style>
