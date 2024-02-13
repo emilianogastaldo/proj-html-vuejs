@@ -15,10 +15,11 @@ export default {
 
 <template>
     <!-- Claudio -->
-    <footer class="container text-center">
-        <FooterTop :footerLinks="footerLinks" />
-        <FooterBottom />
-
+    <footer>
+        <div class="text-center">
+            <FooterTop :footerLinks="footerLinks" />
+            <FooterBottom />
+        </div>
     </footer>
 </template>
 
@@ -28,11 +29,6 @@ export default {
 footer {
     background-color: #060607;
     color: white;
-    max-width: 100vw;
     font-size: 20px;
-
-
-
-
 }
 </style>
