@@ -9,8 +9,13 @@ export default {
 <template>
     <section class="row my-4">
         <div class="col-6 position-relative">
-            <div class="image-section">
-                <img class="img-fluid" src="../../assets/images/service15-2x.jpg" alt="woman">
+            <div class="image-container">
+                <div class="position-relative">
+                    <img class="img-fluid" src="../../assets/images/service15-2x.jpg" alt="woman">
+                    <a href="#" class="play-button">
+                        <i class="fas fa-play"></i>
+                    </a>
+                </div>
             </div>
         </div>
         <div class="col-6">
@@ -59,20 +64,43 @@ export default {
     color: #98939F;
 }
 
-.image-section {
-    height: 300px;
+
+
+.image-container {
+    height: 100%;
     position: absolute;
     top: -150px;
     left: 10px;
 
     img {
-        border-radius: 0 5px 50px 0;
+        border-radius: 0 5px 25px 0;
     }
 }
 
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    line-height: 80px;
+    text-align: center;
+    height: 80px;
+    width: 80px;
+    border: none;
+    color: blue;
+    background-color: white;
+    border-radius: 50%;
+    font-size: 23px;
+}
+
+.play-button:hover {
+    color: #FF414B;
+}
+
+
 .text {
-    padding-top: 100px;
-    padding-bottom: 400px;
+
 
     h2 {
         font-size: 62px;
