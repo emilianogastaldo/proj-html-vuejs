@@ -30,6 +30,19 @@ export default {
     color: white;
 }
 
+.btn {
+    padding: 10px 30px 10px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    border-color: transparent;
+}
+
+a:hover {
+    background-color: #ff414b;
+}
+
+
+
 span {
     color: #fff941;
 }
