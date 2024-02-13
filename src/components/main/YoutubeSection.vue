@@ -1,9 +1,13 @@
 <script>
+import YoutubeChannel from './YoutubeChannel.vue'
 export default {
-    name: 'YoutubeSection'
+    name: 'YoutubeSection',
+    components: { YoutubeChannel }
 }
 </script>
 
-<template></template>
+<template>
+    <YoutubeChannel />
+</template>
 
 <style lang="scss" scoped></style>
