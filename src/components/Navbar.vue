@@ -3,26 +3,25 @@
 import headerLinks from '../data/_headerLinks';
 export default {
     name: 'Navbar',
+    data() {
+        return {
+            headerLinks: headerLinks,
+            showSearchBar: false, // variabile show su non visibile
+        };
+    },
     methods: {
         goToSchedule() {
             window.location.href = 'https://avada.website/fitness/contact/';
         },
         goToCart() {
             window.location.href = 'https://avada.website/fitness/cart/';
-        }
-    }, data() {
-        return {
-            headerLinks: headerLinks,
-
-            // Dropdown
-
-            // dropdownOptions: [
-            //     { text: 'Option 1', link: '#' },
-            //     { text: 'Option 2', link: '#' }
-            // ]
-        };
-    }
-}
+        },
+        toggleSearchBar() {
+            // Inverto lo stato di showSearchBar al click sull'icona
+            this.showSearchBar = !this.showSearchBar;
+        },
+    },
+};
 </script>
 
 <template>
@@ -45,14 +44,33 @@ export default {
                     </li>
                     <button @click="goToSchedule">Schedule a workout</button>
                     <i class="icon fa-solid fa-cart-shopping" @click="goToCart"></i>
-                    <i class="icon fa fa-search"></i>
+                    <i class="icon fa fa-search" @click="toggleSearchBar"></i>
                 </ul>
+
+                <!-- Barra di ricerca -->
+                <div class="search-bar" :class="{ 'active': showSearchBar }">
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
             </div>
         </div>
     </div>
 </template>
 
 <style lang="scss" scoped>
+.search-bar {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1;
+    display: none;
+}
+
+.search-bar.active {
+    display: block;
+}
+
 .navbar {
     background-color: #060607;
 }
