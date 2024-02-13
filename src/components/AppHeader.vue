@@ -14,7 +14,6 @@ export default {
     <!-- Amarildo -->
     <Navbar />
     <Jumbotron />
-    <h1>SONO L'HEADER</h1>
 </template>
 
 <style lang="scss" scoped></style>
