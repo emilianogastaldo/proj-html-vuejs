@@ -36,11 +36,13 @@ export default {
                 <h1>“How you respond to the challenge in the second half will determine what you become after the game,
                     whether
                     you are a winner or a loser.”</h1>
-                <img src="" alt="">
-                <div>
-                    <img src="" alt="">
+                <p>
+                    <<< Aggiungere>>>
+                </p>
+                <div class="runner">
+                    <img class="circle-img" src="../../assets/images/avatar-1-2x.jpg" alt="runner">
                     <span>Brad Johnson </span>
-                    <span>Las Vegas</span>
+                    <span class="fw-normal">Las Vegas</span>
                 </div>
             </div>
         </div>
@@ -141,6 +143,20 @@ export default {
 
 .text-under-cards h1 {
     font-weight: 600;
+}
+
+.circle-img {
+    border-radius: 50%;
+    height: 4rem;
+}
+
+.runner {
+    margin-top: 2rem;
+}
+
+.runner * {
+    align-items: center;
+    padding: 5px;
 }
 </style>
 
