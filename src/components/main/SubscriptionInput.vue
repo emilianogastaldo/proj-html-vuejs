@@ -1,6 +1,9 @@
 <script>
 export default {
-    name: 'SubscribtionInput'
+    name: 'SubscribtionInput',
+    data: () => ({
+        email: ''
+    })
 }
 </script>
 
@@ -13,7 +16,7 @@ export default {
             <span><i class="fa-solid fa-chevron-up" style="color: #FFF941;"></i><i class="fa-solid fa-chevron-up"
                     style="color: #FFF941;"></i><i class="fa-solid fa-chevron-up" style="color: #FFF941;"></i></span>
             <div class="mb-3">
-                <input type="email" placeholder="Insert your email ...*">
+                <input type="email" placeholder="Insert your email ...*" v-model.trim="email">
                 <button>Subscribe</button>
             </div>
             <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus dolor sit amet, consectetur<br> adipiscing
@@ -26,7 +29,10 @@ export default {
 <style lang="scss" scoped>
 .image {
     min-height: 800px;
-    background-image: url("../../assets/images/banner1-2x.jpg");
+    background: linear-gradient(to right,
+            rgba(0, 0, 0, 1) 36%,
+            rgba(0, 0, 0, 0) 100%),
+        url("../../assets/images/banner1-2x.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -59,6 +65,10 @@ button {
     border-radius: 15px;
     padding: 5px 10px;
     width: 200px;
+}
+
+button:hover {
+    background-color: #FF414B;
 }
 
 p {
