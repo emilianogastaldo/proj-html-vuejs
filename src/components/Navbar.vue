@@ -1,6 +1,27 @@
 <script>
+
+import headerLinks from '../data/_headerLinks';
 export default {
-    name: 'Navbar'
+    name: 'Navbar',
+    methods: {
+        goToSchedule() {
+            window.location.href = 'https://avada.website/fitness/contact/';
+        },
+        goToCart() {
+            window.location.href = 'https://avada.website/fitness/cart/';
+        }
+    }, data() {
+        return {
+            headerLinks: headerLinks,
+
+            // Dropdown
+
+            // dropdownOptions: [
+            //     { text: 'Option 1', link: '#' },
+            //     { text: 'Option 2', link: '#' }
+            // ]
+        };
+    }
 }
 </script>
 
@@ -15,14 +36,15 @@ export default {
 
             <div class="">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Videos</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Store</a></li>
-                    <button>Schedule a workout</button>
-                    <i class="icon fa-solid fa-cart-shopping"></i>
+                    <li v-for="link in headerLinks" :key="link.text">
+                        <a :href="link.url" :class="{ 'active': link.current }">{{ link.text }}</a>
+
+                        <!-- <template v-if="link.text !== 'Home'">
+                            <Dropdown :options="dropdownOptions" />
+                        </template> -->
+                    </li>
+                    <button @click="goToSchedule">Schedule a workout</button>
+                    <i class="icon fa-solid fa-cart-shopping" @click="goToCart"></i>
                     <i class="icon fa fa-search"></i>
                 </ul>
             </div>
@@ -85,5 +107,6 @@ export default {
 .icon {
     padding: 0.8rem;
     color: #98939F;
+    cursor: pointer;
 }
 </style>
