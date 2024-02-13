@@ -18,7 +18,7 @@ export default {
 
 <template>
     <div class="card text-center">
-        <div class="icona"><i class="fa-solid fa-stopwatch fa-2xl" :class="icon"></i></div>
+        <div class="icona"><i class="fa-solid fa-2xl" :class="icon"></i></div>
         <div class="card-body">
             <h5 class="card-title">{{ title }}</h5>
             <h6>{{ subtitle }}</h6>

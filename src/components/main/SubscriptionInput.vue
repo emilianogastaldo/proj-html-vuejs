@@ -17,7 +17,7 @@ export default {
                     style="color: #FFF941;"></i><i class="fa-solid fa-chevron-up" style="color: #FFF941;"></i></span>
             <div class="mb-3">
                 <input type="email" placeholder="Insert your email ...*" v-model.trim="email">
-                <button>Subscribe</button>
+                <button @click="email = ''">Subscribe</button>
             </div>
             <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus dolor sit amet, consectetur<br> adipiscing
                 elit
