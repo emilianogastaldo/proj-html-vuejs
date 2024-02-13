@@ -1,31 +1,33 @@
 <script>
-import ShopCards from './ShopCards.vue';
+import ShopCard from './ShopCard.vue';
 import shops from '../../data/_shopData'
 export default {
     name: 'ShopLink',
     data: () => ({
         shops
     }),
-    components: { ShopCards }
+    components: { ShopCard }
 }
 </script>
 
 <template>
-    <section id="shop" class="container">
-        <div class="card-container ">
-            <ShopCards v-for="shop in shops" :key="shop.id" v-bind="shop" />
+    <section id="shop">
+        <div class="container">
+            <div class="card-container">
+                <ShopCard v-for="shop in shops" :key="shop.id" v-bind="shop" />
+            </div>
         </div>
     </section>
 </template>
 
 <style scoped>
-section #shop {
-    min-height: 1000px;
-    padding: 50px 0 50px 0;
-    background-image: url(../../assets/images/banner2-2x.jpg);
+#shop {
+    background-image: url("../../assets/images/banner2-2x.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 .card-container {
-    padding: 0 200px 0 200px;
+    padding: 200px;
 }
 </style>
