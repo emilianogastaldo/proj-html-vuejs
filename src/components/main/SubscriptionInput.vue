@@ -66,6 +66,7 @@ button {
 
 button:hover {
     background-color: #FF414B;
+    transition: all .2s ease-in-out;
 }
 
 p {
