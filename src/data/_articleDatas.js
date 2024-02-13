@@ -5,7 +5,9 @@ export default [
         creator: 'admin',
         date: 'November 26th, 2019',
         subject: 'Gym',
-        img: 'blog4-2x.jpg'
+        img: 'blog4-2x.jpg',
+        url: '#',
+        alt: 'dumbell'
     },
     {
         id: 2,
@@ -13,7 +15,9 @@ export default [
         creator: 'admin',
         date: 'November 26th, 2019',
         subject: 'Gym',
-        img: 'blog1-2x.jpg'
+        img: 'blog1-2x.jpg',
+        url: '#',
+        alt: 'woman'
     },
     {
         id: 3,
@@ -21,6 +25,8 @@ export default [
         creator: 'admin',
         date: 'November 26th, 2019',
         subject: 'Gym',
-        img: 'blog3-2x.jpg'
+        img: 'blog3-2x.jpg',
+        url: '#',
+        alt: 'juices'
     }
 ]
