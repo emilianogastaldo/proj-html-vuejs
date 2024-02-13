@@ -12,7 +12,7 @@ export default {
 
     <div class="jumbotron">
         <div class="container d-flex justify-content-between align-items-center">
-            <div class="content">
+            <div class="content fade-in-down">
                 <h3>Certified fitness pofessional</h3>
                 <h1>Take control of your helth</h1>
                 <p>Curabitu non nula sit amen nisl tempus convallis quis ac lectus dolor sit amet</p>
@@ -22,7 +22,7 @@ export default {
                 </div>
             </div>
             <div>
-                <button class="play-btn ">
+                <button class="play-btn fade-in-down">
                     <i class="fa-solid fa-play"></i>
                 </button>
             </div>
@@ -121,5 +121,20 @@ p {
 
 .play-btn i:hover {
     color: #FF414B;
+}
+
+
+// EFFECT
+.fade-in-down {
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInDown 2s ease-out forwards;
+}
+
+@keyframes fadeInDown {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 </style>
