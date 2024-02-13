@@ -3,26 +3,40 @@ export default {
     name: 'ShopCards',
     props: {
         id: Number,
+        quote: String,
         text: String,
-        url: String,
-        img: String,
-        link: String
+        button: String
     }
 }
 </script>
+
 <template>
-    <div class="card" style="width: 18rem;">
-        <img :src="img" class="card-img-top" alt="...">
+    <div class="card d-flex justify-content-center align-items-center text-center">
         <div class="card-body">
-            <h5 class="card-title d-flex justify-content-center"><i class="fa-solid fa-chevron-up"></i><i
-                    class="fa-solid fa-chevron-up"></i><i class="fa-solid fa-chevron-up"></i></h5>
+            <h5 class="card-title">{{ quote }}</h5>
+            <span><i class="fa-solid fa-chevron-up"></i><i class="fa-solid fa-chevron-up"></i><i
+                    class="fa-solid fa-chevron-up"></i></span>
             <p class="card-text">{{ text }}</p>
-            <a :href="url">{{ link }}</a>
+            <a href="#" class="btn btn-primary">{{ button }} <i class="fa-solid fa-chevron-right"></i></a>
         </div>
     </div>
 </template>
+
 <style scoped>
-i {
-    color: #4154ff;
+.card {
+    border-color: transparent;
+}
+
+span {
+    color: #fff941
+}
+
+h5 {
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+p {
+    font-size: 1.5rem;
 }
 </style>
