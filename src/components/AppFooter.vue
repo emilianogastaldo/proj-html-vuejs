@@ -1,6 +1,11 @@
 <script>
+import { footerLinks } from '../data/index';
 export default {
-    name: 'AppFooter'
+    name: 'AppFooter',
+    data: () => ({
+        footerLinks
+    })
+
 }
 </script>
 
@@ -36,21 +41,11 @@ export default {
                 <div class="col pt-4">
                     <h5>RECENT POST</h5>
                     <ul class="footer-menu">
-                        <li class="pb-3">
-                            <a href="#"><i class="fa-solid fa-chevron-right me-1"></i>The best protein shake</a>
+                        <!-- aggiungi a footerlinks il percorso url -->
+                        <li class="pb-3" v-for="(link, i) in footerLinks" :key="i">
+                            <a :href="link.url"><i class="fa-solid fa-chevron-right me-1"></i>{{ link.text }}</a>
                         </li>
-                        <li>
-                            <a href="#"><i class="fa-solid fa-chevron-right me-1"></i>Ultimate cardio workout</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa-solid fa-chevron-right me-1"></i>New juices available now</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa-solid fa-chevron-right me-1"></i>Tips to find training partners</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa-solid fa-chevron-right me-1"></i>20 best healthy recipes</a>
-                        </li>
+
                     </ul>
                 </div>
                 <div class="col pt-4">
@@ -63,7 +58,6 @@ export default {
                         Email : info@your-company.com
                     </div>
                 </div>
-                <!--fare il footer bottom, sistemare il layout, fare lista per dati dinaminci  -->
             </div>
         </div>
         <div class="footer-bottom pt-5 pb-2">
