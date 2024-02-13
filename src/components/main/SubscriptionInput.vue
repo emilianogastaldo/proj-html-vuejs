@@ -8,7 +8,7 @@ export default {
 </script>
 
 <template>
-    <div class="image d-flex align-items-center">
+    <div class="image d-flex align-items-center py-5">
         <div class="container">
             <h4>Join our mailing list today</h4>
             <h1> Insider offers & flash sales in your<br>
@@ -28,15 +28,12 @@ export default {
 
 <style lang="scss" scoped>
 .image {
-    min-height: 800px;
     background: linear-gradient(to right,
             rgba(0, 0, 0, 1) 36%,
             rgba(0, 0, 0, 0) 100%),
         url("../../assets/images/banner1-2x.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
-    height: auto;
 }
 
 h4 {
