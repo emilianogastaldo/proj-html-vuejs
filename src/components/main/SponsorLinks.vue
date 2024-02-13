@@ -1,5 +1,5 @@
 <script>
-import ShopCards from './ShopCards.vue';
+import SponsorCard from './SponsorCard.vue';
 // importare dati da data 
 import sponsors from '../../data/_sponsorImages'
 export default {
@@ -7,7 +7,7 @@ export default {
     data: () => ({
         sponsors
     }),
-    components: { ShopCards }
+    components: { SponsorCard }
 
 }
 </script>
@@ -15,13 +15,14 @@ export default {
 <template>
     <section id="sponsor" class="container">
         <div class="card-container d-flex justify-content-center align-items-center column-gap-3 text-center">
-            <ShopCards v-for="sponsor in sponsors" :key="sponsor.id" v-bind="sponsor" />
+            <SponsorCard v-for="sponsor in sponsors" :key="sponsor.id" v-bind="sponsor" />
         </div>
     </section>
 </template>
 
 <style scoped>
-section #sponsor {
-    min-height: 800px;
+#sponsor {
+    min-height: 600px;
+    padding: 100px 0 100px 0;
 }
 </style>
