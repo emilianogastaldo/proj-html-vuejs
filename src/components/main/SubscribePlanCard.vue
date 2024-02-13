@@ -23,7 +23,7 @@ export default {
             <h5 class="card-title">{{ title }}</h5>
             <h6>{{ subtitle }}</h6>
             <p class="card-text">{{ paragrph }}</p>
-            <a href="#">{{ link }} <span><i class="fa-solid fa-chevron-right fa-2xs"></i></span></a>
+            <a :href="url">{{ link }} <span><i class="fa-solid fa-chevron-right fa-2xs"></i></span></a>
         </div>
     </div>
 </template>

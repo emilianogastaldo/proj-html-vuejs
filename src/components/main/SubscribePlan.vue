@@ -16,10 +16,10 @@ export default {
     <section id="subscribe-plan">
         <div class="container d-flex align-item-center justify-content-center">
             <div class="row g-5 row-col-3">
-                <div class="col" v-for="card in subPlan" :key="card.id">
+                <a class="col" v-for="card in subPlan" :key="card.id" :href="card.url">
                     <SubscribePlanCard :icon="card.icon" :title="card.title" :subtitle="card.subtitle"
                         :paragrph="card.paragrph" :link="card.link" :url="card.url" />
-                </div>
+                </a>
             </div>
         </div>
     </section>
@@ -28,5 +28,10 @@ export default {
 #subscribe-plan {
     background-color: black;
     min-height: 500px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
 }
 </style>
