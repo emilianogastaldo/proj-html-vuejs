@@ -1,7 +1,27 @@
 <script>
+
+import headerLinks from '../data/_headerLinks';
 export default {
-    name: 'Navbar'
-}
+    name: 'Navbar',
+    data() {
+        return {
+            headerLinks: headerLinks,
+            showSearchBar: false, // variabile show su non visibile
+        };
+    },
+    methods: {
+        goToSchedule() {
+            window.location.href = 'https://avada.website/fitness/contact/';
+        },
+        goToCart() {
+            window.location.href = 'https://avada.website/fitness/cart/';
+        },
+        toggleSearchBar() {
+            // Inverto lo stato di showSearchBar al click sull'icona
+            this.showSearchBar = !this.showSearchBar;
+        },
+    },
+};
 </script>
 
 <template>
@@ -15,22 +35,42 @@ export default {
 
             <div class="">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Videos</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Store</a></li>
-                    <button>Schedule a workout</button>
-                    <i class="icon fa-solid fa-cart-shopping"></i>
-                    <i class="icon fa fa-search"></i>
+                    <li v-for="link in headerLinks" :key="link.text">
+                        <a :href="link.url" :class="{ 'active': link.current }">{{ link.text }}</a>
+
+                        <!-- <template v-if="link.text !== 'Home'">
+                            <Dropdown :options="dropdownOptions" />
+                        </template> -->
+                    </li>
+                    <button @click="goToSchedule">Schedule a workout</button>
+                    <i class="icon fa-solid fa-cart-shopping" @click="goToCart"></i>
+                    <i class="icon fa fa-search" @click="toggleSearchBar"></i>
                 </ul>
+
+                <!-- Barra di ricerca -->
+                <div class="search-bar" :class="{ 'active': showSearchBar }">
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
             </div>
         </div>
     </div>
 </template>
 
 <style lang="scss" scoped>
+.search-bar {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1;
+    display: none;
+}
+
+.search-bar.active {
+    display: block;
+}
+
 .navbar {
     background-color: #060607;
 }
@@ -85,5 +125,6 @@ export default {
 .icon {
     padding: 0.8rem;
     color: #98939F;
+    cursor: pointer;
 }
 </style>
