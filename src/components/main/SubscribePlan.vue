@@ -10,16 +10,13 @@ export default {
             <div class="row g-3 row-col-3">
                 <div class="col">
                     <div class="card text-center">
-                        <img src="" class="card-img-top" alt="...">
+                        <div class="icona"><i class="fa-solid fa-stopwatch fa-2xl"></i></div>
                         <div class="card-body">
                             <h5 class="card-title">Team training</h5>
                             <h6>Find a partner</h6>
                             <p class="card-text">Vestibulum, curabitur eu sem nibh ultrices sit nulla adipiscing. Nisl sit
                                 fames amet senectus eget sed duis vehicula. Tristique.</p>
-                            <p>At laoreet senectus volutpat diam vel sed sed amet pellentesque. Lobortis ut aliquam risus
-                                purus. A tellus ut etiam.</p>
-                            <a href="#">Find a partner <span><i class="fa-solid fa-chevron-right fa-2xs"
-                                        style="color: white;"></i></span></a>
+                            <a href="#">Find a partner <span><i class="fa-solid fa-chevron-right fa-2xs"></i></span></a>
                         </div>
                     </div>
                 </div>
@@ -27,7 +24,6 @@ export default {
         </div>
     </section>
 </template>
-
 <style lang="scss" scoped>
 #subscribe-plan {
     background-color: black;
@@ -43,6 +39,10 @@ export default {
     margin-top: 50px;
 }
 
+.icona {
+    color: white;
+    margin-top: 30px;
+}
 
 
 h5 {
@@ -55,10 +55,15 @@ h6 {
 
 p {
     color: white;
+    margin: 30px 0;
 }
 
 a {
     color: white;
     text-decoration: none;
+}
+
+i {
+    color: white;
 }
 </style>
