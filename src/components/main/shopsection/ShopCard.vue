@@ -1,6 +1,8 @@
 <script>
+import AppButton from '../../AppButton.vue';
 export default {
     name: 'ShopCard',
+    components: { AppButton },
     props: {
         id: Number,
         quote: String,
@@ -14,11 +16,12 @@ export default {
     <div class="card d-flex justify-content-center align-items-center text-center">
         <div class="card-body">
             <h5 class="card-title mb-4">"{{ quote }}"</h5>
-            <span><i class="fa-solid fa-chevron-up"></i><i class="fa-solid fa-chevron-up"></i><i
-                    class="fa-solid fa-chevron-up"></i>
-            </span>
+            <span><i v-for="n in 3" class="fa-solid fa-chevron-up"></i> </span>
             <p class="card-text mt-4">{{ text }}</p>
-            <a href="#" class="btn btn-primary mt-2">{{ button }} <i class="fa-solid fa-chevron-right"></i></a>
+            <AppButton class="mt-2">
+                {{ button }} <i class="fa-solid fa-chevron-right"></i>
+            </AppButton>
+
         </div>
     </div>
 </template>
@@ -29,19 +32,6 @@ export default {
     background-color: transparent;
     color: white;
 }
-
-.btn {
-    padding: 10px 30px 10px 30px;
-    border-radius: 50px;
-    font-weight: 600;
-    border-color: transparent;
-}
-
-a:hover {
-    background-color: #ff414b;
-}
-
-
 
 span {
     color: #fff941;
