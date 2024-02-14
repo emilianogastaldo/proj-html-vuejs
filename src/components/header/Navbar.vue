@@ -1,5 +1,5 @@
 <script>
-
+import AppButton from '../AppButton.vue';
 import headerLinks from '../../data/_headerLinks';
 export default {
     name: 'Navbar',
@@ -10,6 +10,7 @@ export default {
             search: '',
         };
     },
+    components: { AppButton },
     methods: {
         goToSchedule() {
             window.location.href = 'https://avada.website/fitness/contact/';
@@ -44,7 +45,9 @@ export default {
                             <Dropdown :options="dropdownOptions" />
                         </template> -->
                     </li>
-                    <button @click="goToSchedule">Schedule a workout</button>
+                    <AppButton @click="goToSchedule" class="btn-small">
+                        Schedule a workout
+                    </AppButton>
                     <i class="icon fa fa-search" @click="toggleSearchBar"></i>
                     <i class="icon fa-solid fa-cart-shopping" @click="goToCart"></i>
 
@@ -137,22 +140,6 @@ export default {
 .navbar a:hover {
 
     color: #FFFFFF;
-}
-
-.navbar button {
-    font-weight: 600;
-    background-color: #4154FF;
-    color: white;
-    border-radius: 2rem;
-    border: none;
-    padding: 10px 20px;
-    display: inline-block;
-    font-size: 14px;
-    cursor: pointer;
-}
-
-.navbar button:hover {
-    background-color: #FF414B;
 }
 
 .icon {

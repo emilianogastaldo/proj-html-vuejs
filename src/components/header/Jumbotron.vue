@@ -1,8 +1,9 @@
 <script>
 import PlayButton from '../PlayButton.vue';
+import AppButton from '../AppButton.vue';
 export default {
     name: 'Jumbotron'
-    , components: { PlayButton }
+    , components: { PlayButton, AppButton }
 }
 </script>
 
@@ -21,11 +22,15 @@ export default {
                     </p>
                     <p>Curabitu non nula sit amen nisl tempus convallis quis ac lectus dolor sit amet</p>
                     <div class="buttons-container">
-                        <button class="btn-blue"><i class="fa-brands fa-youtube"></i> Visit my YouTube channel</button>
-                        <button class="btn">Buy Avada today <i class="fa-solid fa-arrow-right"></i></button>
+                        <AppButton>
+                            <i class="fa-brands fa-youtube"></i> Visit my YouTube channel
+                        </AppButton>
+                        <AppButton class="btn-transparent">
+                            Buy Avada today <i class="fa-solid fa-arrow-right"></i>
+                        </AppButton>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col fade-in-down">
                     <PlayButton />
                 </div>
             </div>
@@ -80,42 +85,8 @@ p {
     gap: 0.5rem;
 }
 
-.btn {
-    font-weight: 600;
-    color: #98939F;
-    border-radius: 2rem;
-    border: 1px solid #98939F;
-    padding: 15px 30px;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.btn:hover {
-    color: black;
-    background-color: white;
-
-}
-
-.btn-blue {
-    font-weight: 600;
-    background-color: #4154FF;
-    color: white;
-    border-radius: 2rem;
-    border: none;
-    padding: 10px 20px;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.btn-blue:hover {
-    background-color: #FF414B;
-}
-
 .row {
     transform: translate(0, -20%);
-
 }
 
 // EFFECT

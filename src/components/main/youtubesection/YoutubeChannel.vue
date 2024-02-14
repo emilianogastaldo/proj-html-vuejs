@@ -1,9 +1,9 @@
 <script>
-import AppButton from '../AppButton.vue';
+import AppButton from '../../AppButton.vue';
 import PlayButton from '../../PlayButton.vue';
 export default {
     name: 'YoutubeChannel',
-    components: { AppButton, PlayButton }
+    components: { PlayButton, AppButton }
 }
 </script>
 
@@ -33,7 +33,7 @@ export default {
                     venenatis, leo
                     integer sit
                     pellentesque.</p>
-                <AppButton class="color-white bg-color-red">
+                <AppButton class="bg-color-red">
                     <i class="fa-brands fa-youtube"></i> Visit my Youtube channel
                 </AppButton>
             </div>
@@ -46,13 +46,7 @@ export default {
     color: #4154ff;
 }
 
-.color-white {
-    color: white
-}
 
-.bg-color-red {
-    background-color: red;
-}
 
 .bg-color-blue {
     background-color: #4154ff

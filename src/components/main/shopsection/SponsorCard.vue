@@ -21,8 +21,7 @@ export default {
         <a :href="url">
             <img :src="imagePath" class="card-img-top" :alt="link">
             <div class="card-body">
-                <h5 class="card-title d-flex justify-content-center"><i class="fa-solid fa-chevron-up"></i><i
-                        class="fa-solid fa-chevron-up"></i><i class="fa-solid fa-chevron-up"></i></h5>
+                <p><i v-for="n in 3" class="fa-solid fa-chevron-up"></i></p>
                 <p class="card-text mt-3">{{ text }} </p>
                 <span class="d-flex align-items-center justify-content-center gap-2">{{ link }} <i
                         class="fa-solid fa-chevron-right"></i>
@@ -37,7 +36,7 @@ export default {
     border-color: transparent;
 }
 
-h5 i {
+p i {
     color: #4154ff;
 }
 
