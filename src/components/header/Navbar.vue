@@ -7,6 +7,7 @@ export default {
         return {
             headerLinks: headerLinks,
             showSearchBar: false, // variabile show su non visibile
+            search: '',
         };
     },
     methods: {
@@ -52,8 +53,9 @@ export default {
                 <!-- Barra di ricerca -->
                 <div class="search-bar" :class="{ 'active': showSearchBar }">
                     <div class=" d-flex">
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Search...">
-                        <i class="icon fa fa-search search-icon"></i>
+                        <input v-model="search" class="form-control" id="exampleFormControlInput1" placeholder="Search..."
+                            @keyup.enter="search = ''">
+                        <i class="icon fa fa-search search-icon" @click="search = ''"></i>
                         <i class="icon fa fa-times " @click="toggleSearchBar"></i>
                     </div>
                 </div>
