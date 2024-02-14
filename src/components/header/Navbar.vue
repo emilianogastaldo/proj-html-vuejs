@@ -36,7 +36,8 @@ export default {
             <div class="">
                 <ul v-if="!showSearchBar">
                     <li v-for="link in headerLinks" :key="link.text">
-                        <a :href="link.url" :class="{ 'active': link.current }">{{ link.text }}</a>
+                        <a :href="link.url" :class="{ 'active': link.current }">{{ link.text }}
+                            <span class="badge bg">{{ link.badge }}</span></a>
 
                         <!-- <template v-if="link.text !== 'Home'">
                             <Dropdown :options="dropdownOptions" />
@@ -63,7 +64,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-// SEARCH_BAR SECTION
+// SEARCHBAR SECTION
 .search-bar {
     background-color: #060607;
 
@@ -156,5 +157,12 @@ export default {
     padding: 0.8rem;
     color: #98939F;
     cursor: pointer;
+}
+
+// BADGE
+.bg {
+    background-color: #FFF941;
+    color: #060607;
+    font-weight: 600;
 }
 </style>
