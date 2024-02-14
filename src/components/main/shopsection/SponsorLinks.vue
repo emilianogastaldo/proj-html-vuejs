@@ -14,13 +14,11 @@ export default {
 
 <template>
     <section id="sponsor" class="container">
-        <div class="card-container d-flex justify-content-center align-items-center column-gap-3 text-center">
-            <ul>
-                <li v-for="sponsor in sponsors" :key="sponsor.id">
-                    <SponsorCard v-bind="sponsor" />
-                </li>
-            </ul>
-        </div>
+        <ul class="row justify-content-center align-items-center text-center">
+            <li class="col" v-for="sponsor in sponsors" :key="sponsor.id">
+                <SponsorCard v-bind="sponsor" />
+            </li>
+        </ul>
     </section>
 </template>
 
@@ -33,5 +31,6 @@ export default {
 ul {
     list-style-type: none;
     display: flex;
+    padding-inline-start: 0;
 }
 </style>

@@ -17,7 +17,7 @@ export default {
 }
 </script>
 <template>
-    <div class="card" style="width: 18rem;">
+    <div class="card">
         <a :href="url">
             <img :src="imagePath" class="card-img-top" :alt="link">
             <div class="card-body">
