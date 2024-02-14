@@ -15,6 +15,9 @@ export default {
             <div class="content fade-in-down">
                 <h3>Certified fitness pofessional</h3>
                 <h1>Take control of your helth</h1>
+                <p>
+                    <i v-for="n in 3" class="fa-solid fa-chevron-up color-yellow"></i>
+                </p>
                 <p>Curabitu non nula sit amen nisl tempus convallis quis ac lectus dolor sit amet</p>
                 <div class="buttons-container">
                     <button class="btn-blue"><i class="fa-brands fa-youtube"></i> Visit my YouTube channel</button>
@@ -26,9 +29,7 @@ export default {
                     <i class="fa-solid fa-play"></i>
                 </button>
             </div>
-
         </div>
-
     </div>
 </template>
 
@@ -54,6 +55,10 @@ h3 {
     font-size: 1.5em;
     font-weight: 600;
     color: #FF414B;
+}
+
+.color-yellow {
+    color: #FFF941;
 }
 
 h1 {
