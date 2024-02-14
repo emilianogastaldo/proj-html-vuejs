@@ -18,7 +18,7 @@ export default {
                         Ac aliquam neque sagittis diam faucibus vitae purus turpis phasellus. Pellentesque consectetur amet
                         purus ultrices mauris.
                     </p>
-                    <ul class="d-flex justify-content-center gap-2">
+                    <ul class="d-flex justify-content-center gap-4">
                         <li>
                             <a href="#"><i class="fa-brands fa-facebook-f" title="facebook"></i></a>
                         </li>

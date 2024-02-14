@@ -2,7 +2,7 @@
 export default {}
 </script>
 <template>
-    <div class="footer-bottom pt-5 pb-2">
+    <div class="footer-bottom py-5">
         © Copyright 2012 - 2024 | <span><a href="https://boolean.careers/chi-siamo">Avada Website Builder</a></span> by
         <span><a href="https://boolean.careers/corso/full-stack-web-development">ThemeFusion</a></span> | All Rights
         Reserved | Powered by <span><a href="https://boolean.careers/eventi">WordPress</a></span>
@@ -12,6 +12,7 @@ export default {}
 @use '../../assets/scss/style.scss';
 
 .footer-bottom {
+    font-size: 1rem;
     color: #C8C8CA;
     font-weight: 600;
 
