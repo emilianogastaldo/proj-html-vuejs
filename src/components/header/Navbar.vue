@@ -34,7 +34,7 @@ export default {
             </div>
 
             <div class="">
-                <ul>
+                <ul v-if="!showSearchBar">
                     <li v-for="link in headerLinks" :key="link.text">
                         <a :href="link.url" :class="{ 'active': link.current }">{{ link.text }}</a>
 
@@ -50,6 +50,7 @@ export default {
                 <!-- Barra di ricerca -->
                 <div class="search-bar" :class="{ 'active': showSearchBar }">
                     <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    <i class="icon fa fa-times" @click="toggleSearchBar"></i>
                 </div>
             </div>
         </div>
