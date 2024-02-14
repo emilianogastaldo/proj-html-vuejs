@@ -21,9 +21,6 @@ export default {
 
 <style lang="scss" scoped>
 section {
-    // background-image: url('../../assets/images/banner14-2x.jpg');
-    // background: linear-gradient(#0215D8, #D70110), url('../../assets/images/banner14-2x.jpg');
-
     filter: contrast(200%);
     background: linear-gradient(to bottom right,
             rgb(65, 84, 255, 0.4) 0%,

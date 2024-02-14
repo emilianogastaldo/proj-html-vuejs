@@ -1,35 +1,22 @@
 <script>
+import CardSpotlight from './CardSpotlight.vue';
+import { storeSpotlight } from '../../data/index.js'
 export default {
-    name: 'MainSpotlight'
+    name: 'MainSpotlight',
+    components: {
+        CardSpotlight
+    },
+    data: () => ({
+        storeSpotlight
+    })
 }
 </script>
 
 <template>
     <section id="mainspotlight">
         <div class="container">
-            <div class=" card-container">
-                <div class="card bg-disset">
-                    <div>
-                        <p class="my-text-white ">Crossfit workout</p>
-                        <p class="my-text-yellow">Push your limits</p>
-                    </div>
-
-                </div>
-
-                <div class="card bg-gym-clothes">
-                    <div>
-                        <p class="my-text-white ">New gym appare</p>
-                        <p class="my-text-yellow">Look good, feel good</p>
-                    </div>
-
-                </div>
-
-                <div class="card bg-gym">
-                    <div>
-                        <p class="my-text-white ">Team training</p>
-                        <p class="my-text-yellow">Find a partner</p>
-                    </div>
-                </div>
+            <div class="row gap-5 card-container">
+                <CardSpotlight v-for="card in storeSpotlight" :key="storeSpotlight.id" :card="card" />
             </div>
 
             <div class="text-under-cards">
@@ -37,7 +24,7 @@ export default {
                     whether
                     you are a winner or a loser.”</h1>
                 <p>
-                    <<< Aggiungere>>>
+                    <i v-for="n in 3" class="fa-solid fa-chevron-up color-yellow"></i>
                 </p>
                 <div class="runner">
                     <img class="circle-img" src="../../assets/images/avatar-1-2x.jpg" alt="runner">
@@ -56,78 +43,14 @@ export default {
     padding-bottom: 100px;
 }
 
+.color-yellow {
+    color: #FFF941;
+}
+
 .card-container {
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
-    padding: 20px;
-    margin-top: -20px;
-}
-
-.card div {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: flex-end;
-    height: 100%;
-
-}
-
-.card div p {
-    text-align: start;
-    margin-bottom: 0;
-}
-
-.my-text-white {
-    color: #fff;
-    font-size: 1.5rem;
-    font-weight: 600;
-}
-
-.my-text-yellow {
-    color: #FFF941;
-    font-size: 1.2rem;
-    font-weight: 600;
-}
-
-// CARD SECTION--------------------
-
-.bg-disset {
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url(../../assets/images/service6-2x.jpg);
-    object-fit: cover;
-}
-
-.bg-gym-clothes {
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url(../../assets/images/box1-2x.jpg);
-}
-
-.bg-gym {
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url(../../assets/images/box3-2x.jpg);
-}
-
-.card {
-
-    height: 20rem;
-    width: 18rem;
-    background-color: #fff;
-    border-radius: 0 0 2.5rem 0;
-    box-shadow: 2px 1px 8px 8px rgb(0 0 0 / 10%);
-    padding: 20px;
-    margin-top: -20px;
-    transition: transform 0.3s ease-out;
-    margin-top: -50px;
-
-    background-position: center;
-    background-size: cover;
-
-    filter: brightness(0.9);
-    border: none;
-
-
-}
-
-.card:hover {
-    transform: scale(1.05);
 }
 
 .text-under-cards {
@@ -136,7 +59,6 @@ export default {
     margin: 4rem 10rem 0 10rem;
     color: white;
     font-weight: 600;
-
 }
 
 .text-under-cards h1 {
