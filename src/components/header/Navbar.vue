@@ -43,35 +43,65 @@ export default {
                         </template> -->
                     </li>
                     <button @click="goToSchedule">Schedule a workout</button>
-                    <i class="icon fa-solid fa-cart-shopping" @click="goToCart"></i>
                     <i class="icon fa fa-search" @click="toggleSearchBar"></i>
+                    <i class="icon fa-solid fa-cart-shopping" @click="goToCart"></i>
+
                 </ul>
 
                 <!-- Barra di ricerca -->
                 <div class="search-bar" :class="{ 'active': showSearchBar }">
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                    <i class="icon fa fa-times" @click="toggleSearchBar"></i>
+                    <div class=" d-flex">
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Search...">
+                        <i class="icon fa fa-search search-icon"></i>
+                        <i class="icon fa fa-times " @click="toggleSearchBar"></i>
+                    </div>
                 </div>
+
             </div>
         </div>
     </div>
 </template>
 
 <style lang="scss" scoped>
+// SEARCH_BAR SECTION
 .search-bar {
-    position: fixed;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    background-color: #fff;
+    background-color: #060607;
+
     z-index: 1;
     display: none;
+    border-radius: 15px;
+    padding: 5px;
+    align-items: center;
 }
 
 .search-bar.active {
     display: block;
 }
 
+.search-bar .search-input {
+    flex-grow: 1;
+    border: none;
+    border-radius: 10px;
+    padding: 8px;
+    margin-right: 10px;
+}
+
+.search-bar .search-icon {
+    color: white;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+}
+
+.search-bar .search-icon:hover {
+    background-color: #152cff;
+}
+
+.search-bar .form-control {
+    width: 40rem;
+    border-radius: 20px 0px 0px 20px;
+}
+
+// NAVBAR SECTION-------------------
 .navbar {
     background-color: #060607;
 }
@@ -98,14 +128,13 @@ export default {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+
 }
 
 .navbar a:hover {
 
     color: #FFFFFF;
 }
-
-
 
 .navbar button {
     font-weight: 600;
@@ -120,7 +149,7 @@ export default {
 }
 
 .navbar button:hover {
-    background-color: #152cff;
+    background-color: #FF414B;
 }
 
 .icon {
