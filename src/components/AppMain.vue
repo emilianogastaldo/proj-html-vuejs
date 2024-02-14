@@ -1,9 +1,9 @@
 <script>
 import MainSpotlight from './main/MainSpotlight.vue';
-import YoutubeSection from './main/YoutubeSection.vue';
-import SubscribeSection from './main/SubscribeSection.vue';
-import ArticleSection from './main/ArticleSection.vue';
-import ShopSection from './main/ShopSection.vue';
+import YoutubeSection from './main/youtubesection/YoutubeSection.vue';
+import SubscribeSection from './main/subscribesection/SubscribeSection.vue';
+import ArticleSection from './main/articlesection/ArticleSection.vue';
+import ShopSection from './main/shopsection/ShopSection.vue';
 import EventSection from './main/EventSection.vue';
 export default {
     name: 'AppMain',

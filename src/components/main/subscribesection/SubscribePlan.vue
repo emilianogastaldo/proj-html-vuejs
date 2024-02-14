@@ -1,6 +1,6 @@
 <script>
 import SubscribePlanCard from './SubscribePlanCard.vue';
-import { subPlan } from '../../data/index';
+import { subPlan } from '../../../data/index';
 export default {
     name: 'SubscribePlan',
     data: () => ({

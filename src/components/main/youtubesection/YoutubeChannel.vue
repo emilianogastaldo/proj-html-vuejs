@@ -1,5 +1,5 @@
 <script>
-import AppButton from './AppButton.vue';
+import AppButton from '../AppButton.vue';
 export default {
     name: 'YoutubeChannel',
     components: { AppButton }
@@ -11,7 +11,7 @@ export default {
         <div class="col-6 position-relative">
             <div class="image-container">
                 <div class="position-relative">
-                    <img class="img-fluid" src="../../assets/images/service15-2x.jpg" alt="woman">
+                    <img class="img-fluid" src="../../../assets/images/service15-2x.jpg" alt="woman">
                     <a href="#" class="play-button">
                         <i class="fas fa-play"></i>
                     </a>
@@ -23,7 +23,7 @@ export default {
                 <p class="color-blue up-title">Tune up your works</p>
                 <h2>The best health & fitness advice online</h2>
                 <div class="youtube-avatar d-flex my-4 gap-1">
-                    <img class="img-fluid" src="../../assets/images/unnamed.jpg" alt="channel avatar">
+                    <img class="img-fluid" src="../../../assets/images/unnamed.jpg" alt="channel avatar">
                     <div class="channel-button">
                         <p class="m-0">ThemeFusion</p>
                         <button><i class="fa-brands fa-youtube"></i> Youtube</button>

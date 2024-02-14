@@ -31,7 +31,7 @@ export default {
     background: linear-gradient(to right,
             rgba(0, 0, 0, 1) 36%,
             rgba(0, 0, 0, 0) 100%),
-        url("../../assets/images/banner1-2x.jpg");
+        url("../../../assets/images/banner1-2x.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }

@@ -10,7 +10,7 @@ export default {
     },
     computed: {
         imagePath() {
-            const path = new URL(`../../assets/images/${this.img}`, import.meta.url);
+            const path = new URL(`../../../assets/images/${this.img}`, import.meta.url);
             return path.href;
         }
     }

@@ -1,6 +1,6 @@
 <script>
 import YoutubePlaylist from './YoutubePlaylist.vue';
-import { youtubeLinks } from '../../data';
+import { youtubeLinks } from '../../../data';
 import YoutubeChannel from './YoutubeChannel.vue'
 export default {
     name: 'YoutubeSection',

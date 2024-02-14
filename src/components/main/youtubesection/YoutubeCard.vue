@@ -11,7 +11,7 @@ export default {
     },
     computed: {
         imagePath() {
-            const path = new URL(`../../assets/images/${this.img}`, import.meta.url);
+            const path = new URL(`../../../assets/images/${this.img}`, import.meta.url);
             return path.href;
         }
     }
@@ -32,7 +32,7 @@ export default {
     </a>
 </template>
 <style lang="scss" scoped>
-@use '../../assets/scss/style.scss';
+@use '../../../assets/scss/style.scss';
 
 img {
     border-radius: 0 5px 25px 0;

@@ -6,7 +6,7 @@ export default {
     },
     computed: {
         articleImg() {
-            return new URL(`../../assets/images/${this.article.img}`, import.meta.url).href;
+            return new URL(`../../../assets/images/${this.article.img}`, import.meta.url).href;
         }
     }
 }

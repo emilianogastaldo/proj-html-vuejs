@@ -1,5 +1,5 @@
 <script>
-import { subPlan } from '../../data/index';
+import { subPlan } from '../../../data/index';
 export default {
     name: 'SubscribePlanCard',
     data: () => ({

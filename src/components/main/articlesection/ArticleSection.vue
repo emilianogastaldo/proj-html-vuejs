@@ -1,5 +1,5 @@
 <script>
-import { articleDatas } from '../../data/index.js';
+import { articleDatas } from '../../../data/index.js';
 import CardArticleSection from './CardArticleSection.vue';
 export default {
     name: 'ArticleSection',

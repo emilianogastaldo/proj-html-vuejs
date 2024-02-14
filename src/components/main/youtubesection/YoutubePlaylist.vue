@@ -27,7 +27,7 @@ export default {
     </figure>
 </template>
 <style lang="scss" scoped>
-@use '../../assets/scss/style.scss';
+@use '../../../assets/scss/style.scss';
 
 ul {
     list-style-type: none;

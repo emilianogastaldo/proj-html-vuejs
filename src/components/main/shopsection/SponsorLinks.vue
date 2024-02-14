@@ -1,7 +1,7 @@
 <script>
 import SponsorCard from './SponsorCard.vue';
 // importare dati da data 
-import sponsors from '../../data/_sponsorImages'
+import sponsors from '../../../data/_sponsorImages'
 export default {
     name: 'SponsorLinks',
     data: () => ({
