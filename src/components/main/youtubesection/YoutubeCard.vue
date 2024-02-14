@@ -43,6 +43,7 @@ a {
 }
 
 h2 {
+    margin-top: 1.5rem;
     font-size: 25px;
     font-weight: 600;
     color: black;

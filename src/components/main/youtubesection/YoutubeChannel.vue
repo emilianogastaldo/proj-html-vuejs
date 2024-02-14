@@ -7,7 +7,7 @@ export default {
 </script>
 
 <template>
-    <section class="row my-5">
+    <section class=" d-flex my-5">
         <div class="col-6 position-relative">
             <div class="image-container">
                 <div class="position-relative">
@@ -39,7 +39,6 @@ export default {
                 </AppButton>
             </div>
         </div>
-
     </section>
 </template>
 
@@ -68,7 +67,7 @@ export default {
     height: 100%;
     position: absolute;
     top: -100px;
-    left: 10px;
+    left: 0;
 
     img {
         border-radius: 0 5px 25px 0;
@@ -99,7 +98,7 @@ export default {
 
 
 .text {
-    margin-bottom: 500px;
+    margin-bottom: 400px;
 
     h2 {
         font-size: 62px;
