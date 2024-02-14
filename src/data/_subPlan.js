@@ -23,7 +23,7 @@ export default [
         title: 'Weight loss plan',
         subtitle: 'Shed those pounds',
         paragrph: ' laoreet senectus volutpat diam vel sed sed amet pellentesque. Lobortis ut aliquam risus purus. A tellus ut etiam',
-        link: 'schedule a workout',
+        link: 'Schedule a workout',
         url: 'https://themeforest.net/item/avada-responsive-multipurpose-theme/2833226?irgwc=1&clickid=yUC1jNQv%3AxyPUwnwnPQ89QzQUkH13wQVSxLFUQ0&iradid=275988&irpid=1292887&iradtype=ONLINE_TRACKING_LINK&irmptype=mediapartner&mp_value1=&utm_campaign=af_impact_radius_1292887&utm_medium=affiliate&utm_source=impact_radius'
     }
 ]

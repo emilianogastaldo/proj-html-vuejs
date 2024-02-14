@@ -14,7 +14,7 @@ export default {
 
 <template>
     <section id="subscribe-plan">
-        <div class="container d-flex align-item-center justify-content-center">
+        <div class="container align-item-center justify-content-center">
             <div class="row g-5 row-col-3">
                 <a class="col" v-for="card in subPlan" :key="card.id" :href="card.url">
                     <SubscribePlanCard :icon="card.icon" :title="card.title" :subtitle="card.subtitle"
@@ -27,7 +27,7 @@ export default {
 <style lang="scss" scoped>
 #subscribe-plan {
     background-color: black;
-    min-height: 600px;
+    padding: 7rem 0;
 }
 
 a {

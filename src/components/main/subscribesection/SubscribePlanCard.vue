@@ -18,10 +18,10 @@ export default {
 
 <template>
     <div class="card text-center">
-        <div class="icona"><i class="fa-solid fa-2xl" :class="icon"></i></div>
-        <div class="card-body">
-            <h5 class="card-title">{{ title }}</h5>
-            <h6>{{ subtitle }}</h6>
+        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+            <div class="icona"><i class="fa-solid" :class="icon"></i></div>
+            <h2 class="card-title">{{ title }}</h2>
+            <h4>{{ subtitle }}</h4>
             <p class="card-text">{{ paragrph }}</p>
             <a :href="url">{{ link }} <span><i class="fa-solid fa-chevron-right fa-2xs"></i></span></a>
         </div>
@@ -32,10 +32,8 @@ export default {
 .card {
     background-color: black;
     border: solid 3px #4154FF;
-    min-height: 450px;
-    max-width: 350px;
+    min-height: 550px;
     cursor: pointer;
-    margin-top: 70px;
 }
 
 .card:hover {
@@ -44,16 +42,17 @@ export default {
 }
 
 .icona {
+    font-size: 4rem;
     color: white;
-    margin-top: 70px;
+    margin-bottom: 30px;
 }
 
 
-h5 {
+h2 {
     color: white;
 }
 
-h6 {
+h4 {
     color: #FFF941;
 }
 
@@ -67,9 +66,7 @@ p {
 a {
     color: white;
     text-decoration: none;
-}
-
-i {
-    color: white;
+    font-weight: 600;
+    font-size: 1.2rem;
 }
 </style>
