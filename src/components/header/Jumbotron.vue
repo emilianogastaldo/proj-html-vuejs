@@ -11,23 +11,25 @@ export default {
     <!-- Jumbotron -->
 
     <div class="jumbotron">
-        <div class="container d-flex justify-content-between align-items-center">
-            <div class="content fade-in-down">
-                <h3>Certified fitness pofessional</h3>
-                <h1>Take control of your helth</h1>
-                <p>
-                    <i v-for="n in 3" class="fa-solid fa-chevron-up color-yellow"></i>
-                </p>
-                <p>Curabitu non nula sit amen nisl tempus convallis quis ac lectus dolor sit amet</p>
-                <div class="buttons-container">
-                    <button class="btn-blue"><i class="fa-brands fa-youtube"></i> Visit my YouTube channel</button>
-                    <button class="btn">Buy Avada today <i class="fa-solid fa-arrow-right"></i></button>
+        <div class="container ">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-9 content fade-in-down">
+                    <h3>Certified fitness pofessional</h3>
+                    <h1>Take control of your health</h1>
+                    <p>
+                        <i v-for="n in 3" class="fas fa-chevron-up color-yellow"></i>
+                    </p>
+                    <p>Curabitu non nula sit amen nisl tempus convallis quis ac lectus dolor sit amet</p>
+                    <div class="buttons-container">
+                        <button class="btn-blue"><i class="fa-brands fa-youtube"></i> Visit my YouTube channel</button>
+                        <button class="btn">Buy Avada today <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
                 </div>
-            </div>
-            <div>
-                <button class="play-btn fade-in-down">
-                    <i class="fa-solid fa-play"></i>
-                </button>
+                <div class="col">
+                    <button class="play-btn fade-in-down">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                </div>
             </div>
         </div>
     </div>
@@ -44,7 +46,7 @@ export default {
     background-position: top;
     color: white;
     text-align: center;
-    padding: 200px;
+    padding: 200px 0;
 }
 
 .content {
@@ -62,14 +64,14 @@ h3 {
 }
 
 h1 {
-    font-size: 2.5em;
+    font-size: 4rem;
     margin-top: 10px;
     font-weight: 600;
 }
 
 p {
-    font-weight: 600;
-    font-size: 1em;
+
+    font-size: 1.2rem;
     margin-top: 10px;
     color: #98939F;
 }
@@ -86,10 +88,16 @@ p {
     color: #98939F;
     border-radius: 2rem;
     border: 1px solid #98939F;
-    padding: 10px 20px;
+    padding: 15px 30px;
     display: inline-block;
     font-size: 16px;
     cursor: pointer;
+}
+
+.btn:hover {
+    color: black;
+    background-color: white;
+
 }
 
 .btn-blue {
@@ -102,6 +110,10 @@ p {
     display: inline-block;
     font-size: 16px;
     cursor: pointer;
+}
+
+.btn-blue:hover {
+    background-color: #FF414B;
 }
 
 .play-btn {
@@ -117,14 +129,18 @@ p {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     cursor: pointer;
 
-    transform: translate(-180px, -10px);
+}
+
+.row {
+    transform: translate(0, -20%);
+
 }
 
 .play-btn i {
     color: #4154FF;
 }
 
-.play-btn i:hover {
+.play-btn:hover i {
     color: #FF414B;
 }
 
