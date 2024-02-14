@@ -1,6 +1,6 @@
 <script>
 import CardSpotlight from './CardSpotlight.vue';
-import { storeSpotlight } from '../../data/index.js'
+import { storeSpotlight } from '../../../data/index.js'
 export default {
     name: 'MainSpotlight',
     components: {
@@ -27,7 +27,7 @@ export default {
                     <i v-for="n in 3" class="fa-solid fa-chevron-up color-yellow"></i>
                 </p>
                 <div class="runner">
-                    <img class="circle-img" src="../../assets/images/avatar-1-2x.jpg" alt="runner">
+                    <img class="circle-img" src="../../../assets/images/avatar-1-2x.jpg" alt="runner">
                     <span>Brad Johnson </span>
                     <span class="fw-normal">Las Vegas</span>
                 </div>

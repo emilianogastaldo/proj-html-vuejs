@@ -1,5 +1,5 @@
 <script>
-import MainSpotlight from './main/MainSpotlight.vue';
+import MainSpotlight from './main/spotlight/MainSpotlight.vue';
 import YoutubeSection from './main/youtubesection/YoutubeSection.vue';
 import SubscribeSection from './main/subscribesection/SubscribeSection.vue';
 import ArticleSection from './main/articlesection/ArticleSection.vue';

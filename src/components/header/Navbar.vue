@@ -31,7 +31,7 @@ export default {
     <div class="navbar d-flex">
         <div class="d-flex justify-content-between container">
             <div>
-                <img src="../../assets/images/logo.png" alt="Logo" />
+                <a href="#"><img src="../../assets/images/logo.png" alt="Logo" /></a>
             </div>
 
             <div class="">

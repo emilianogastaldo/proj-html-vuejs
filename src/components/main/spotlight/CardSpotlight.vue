@@ -45,19 +45,19 @@ export default {
 }
 
 .bg-disset {
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url(../../assets/images/service6-2x.jpg);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url(../../../assets/images/service6-2x.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .bg-gym-clothes {
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url(../../assets/images/box1-2x.jpg);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url(../../../assets/images/box1-2x.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .bg-gym {
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url(../../assets/images/box3-2x.jpg);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url(../../../assets/images/box3-2x.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
