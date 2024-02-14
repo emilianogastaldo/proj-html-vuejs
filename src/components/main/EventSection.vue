@@ -48,12 +48,13 @@ section {
     p {
         font-size: 38px;
         color: #FFF941;
-        font-weight: 600;
+        font-weight: 500;
     }
 
     a {
         text-decoration: none;
         font-size: 20px;
+        font-weight: 300;
     }
 }
 

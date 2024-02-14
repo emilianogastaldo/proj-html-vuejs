@@ -78,33 +78,37 @@ export default {
     border-radius: 15px;
     padding: 5px;
     align-items: center;
+
+    .search-input {
+        flex-grow: 1;
+        border: none;
+        border-radius: 10px;
+        padding: 8px;
+        margin-right: 10px;
+    }
+
+    .search-icon {
+        color: white;
+        border-radius: 0 20px 20px 0;
+        cursor: pointer;
+    }
+
+    .search-icon:hover {
+        background-color: #152cff;
+    }
+
+    .form-control {
+        width: 40rem;
+        border-radius: 20px 0px 0px 20px;
+    }
 }
 
 .search-bar.active {
     display: block;
 }
 
-.search-bar .search-input {
-    flex-grow: 1;
-    border: none;
-    border-radius: 10px;
-    padding: 8px;
-    margin-right: 10px;
-}
-
-.search-bar .search-icon {
+.fa-search:hover {
     color: white;
-    border-radius: 0 20px 20px 0;
-    cursor: pointer;
-}
-
-.search-bar .search-icon:hover {
-    background-color: #152cff;
-}
-
-.search-bar .form-control {
-    width: 40rem;
-    border-radius: 20px 0px 0px 20px;
 }
 
 // NAVBAR SECTION-------------------

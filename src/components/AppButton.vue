@@ -17,6 +17,7 @@ button {
     background-color: #4145ff;
     border: 1px solid transparent;
     color: white;
+    font-weight: 500;
 }
 
 .btn-large {
