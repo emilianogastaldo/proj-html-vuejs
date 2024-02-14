@@ -1,4 +1,4 @@
-cards: [
+export default [
   {
     id: 1,
     title: "Crossfit workout",
