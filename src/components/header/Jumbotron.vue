@@ -37,7 +37,7 @@ export default {
     background: linear-gradient(to right,
             rgba(0, 0, 0, 1) 45%,
             rgba(0, 0, 0, 0) 100%),
-        url(../assets/images/slider82x-scaled.jpg);
+        url(../../assets/images/slider82x-scaled.jpg);
     background-size: cover;
 
     background-position: top;

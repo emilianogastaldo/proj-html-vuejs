@@ -1,6 +1,6 @@
 <script>
 
-import headerLinks from '../data/_headerLinks';
+import headerLinks from '../../data/_headerLinks';
 export default {
     name: 'Navbar',
     data() {
@@ -30,7 +30,7 @@ export default {
     <div class="navbar d-flex">
         <div class="d-flex justify-content-between container">
             <div>
-                <img src="../assets/images/logo.png" alt="Logo" />
+                <img src="../../assets/images/logo.png" alt="Logo" />
             </div>
 
             <div class="">
