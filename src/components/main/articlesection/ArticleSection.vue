@@ -22,7 +22,7 @@ export default {
                 </div>
                 <div class="col-6">
                     <div class="text-end">
-                        <a class="title" href="#">Read all articles <i class="fas fa-angle-right"></i></a>
+                        <a class="title read-more" href="#">Read all articles <i class="fas fa-angle-right"></i></a>
                     </div>
                 </div>
                 <div class="col-12">
@@ -50,5 +50,9 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+
+.read-more:hover {
+    color: #4154ff
 }
 </style>
