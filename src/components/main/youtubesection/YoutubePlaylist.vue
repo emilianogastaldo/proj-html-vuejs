@@ -11,7 +11,7 @@ export default {
 }
 </script>
 <template>
-    <figure class="container my-5">
+    <figure class="container">
         <div class="row justify-content-between h3 mb-5">
             <div class="col">Featured playlists</div>
             <div class="col text-end">
@@ -28,6 +28,10 @@ export default {
 </template>
 <style lang="scss" scoped>
 @use '../../../assets/scss/style.scss';
+
+figure {
+    margin-bottom: 150px;
+}
 
 ul {
     list-style-type: none;
