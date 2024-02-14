@@ -1,6 +1,10 @@
 <script>
+import PlayButton from '../../PlayButton.vue';
 export default {
     name: 'YoutubeCard',
+    components: {
+        PlayButton
+    },
     props: {
         id: Number,
         title: String,
@@ -21,9 +25,7 @@ export default {
     <a :href="url">
         <div class="position-relative">
             <img :src="imagePath" :alt="alt" class="img-fluid">
-            <a href="#" class="play-button">
-                <i class="fas fa-play"></i>
-            </a>
+            <PlayButton />
         </div>
 
         <h2>{{ title }}</h2>
@@ -59,15 +61,5 @@ h5 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: inline-block;
-    line-height: 80px;
-    text-align: center;
-    height: 80px;
-    width: 80px;
-    border: none;
-    color: blue;
-    background-color: white;
-    border-radius: 50%;
-    font-size: 23px;
 }
 </style>

@@ -39,8 +39,13 @@ ul {
 }
 
 a {
+    font-size: 1rem;
     text-decoration: none;
     color: black;
+}
+
+a:hover {
+    color: #4154ff;
 }
 
 .row {

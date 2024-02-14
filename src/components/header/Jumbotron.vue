@@ -1,8 +1,8 @@
 <script>
+import PlayButton from '../PlayButton.vue';
 export default {
     name: 'Jumbotron'
-    , components: {
-    }
+    , components: { PlayButton }
 }
 </script>
 
@@ -26,9 +26,7 @@ export default {
                     </div>
                 </div>
                 <div class="col">
-                    <button class="play-btn fade-in-down">
-                        <i class="fa-solid fa-play"></i>
-                    </button>
+                    <PlayButton />
                 </div>
             </div>
         </div>
@@ -70,7 +68,6 @@ h1 {
 }
 
 p {
-
     font-size: 1.2rem;
     margin-top: 10px;
     color: #98939F;
@@ -116,34 +113,10 @@ p {
     background-color: #FF414B;
 }
 
-.play-btn {
-    background-color: #fff;
-    border: none;
-    width: 5rem;
-    height: 5rem;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-
-}
-
 .row {
     transform: translate(0, -20%);
 
 }
-
-.play-btn i {
-    color: #4154FF;
-}
-
-.play-btn:hover i {
-    color: #FF414B;
-}
-
 
 // EFFECT
 .fade-in-down {

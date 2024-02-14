@@ -1,8 +1,9 @@
 <script>
 import AppButton from '../AppButton.vue';
+import PlayButton from '../../PlayButton.vue';
 export default {
     name: 'YoutubeChannel',
-    components: { AppButton }
+    components: { AppButton, PlayButton }
 }
 </script>
 
@@ -12,9 +13,7 @@ export default {
             <div class="image-container">
                 <div class="position-relative">
                     <img class="img-fluid" src="../../../assets/images/service15-2x.jpg" alt="woman">
-                    <a href="#" class="play-button">
-                        <i class="fas fa-play"></i>
-                    </a>
+                    <PlayButton />
                 </div>
             </div>
         </div>
@@ -80,22 +79,7 @@ export default {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: inline-block;
-    line-height: 80px;
-    text-align: center;
-    height: 80px;
-    width: 80px;
-    border: none;
-    color: blue;
-    background-color: white;
-    border-radius: 50%;
-    font-size: 23px;
 }
-
-.play-button:hover {
-    color: #FF414B;
-}
-
 
 .text {
     margin-bottom: 400px;

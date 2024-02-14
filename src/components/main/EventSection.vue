@@ -1,6 +1,10 @@
 <script>
+import PlayButton from '../PlayButton.vue';
 export default {
-    name: 'EventSection'
+    name: 'EventSection',
+    components: {
+        PlayButton
+    }
 }
 </script>
 
@@ -8,9 +12,7 @@ export default {
     <section>
         <div class="container">
             <div class="wrapper color-white">
-                <a href="#" class="play-button ">
-                    <i class="fa-solid fa-play"></i>
-                </a>
+                <PlayButton />
                 <h2>Crossfit workout of the day</h2>
                 <p>November 15th, 20219</p>
                 <a href="#" class="color-white">View all videos <i class="fa-solid fa-arrow-right-long"></i> </a>
@@ -57,22 +59,5 @@ section {
 
 .color-white {
     color: white;
-}
-
-.play-button {
-    display: inline-block;
-    line-height: 80px;
-    text-align: center;
-    height: 80px;
-    width: 80px;
-    border: none;
-    color: blue;
-    background-color: white;
-    border-radius: 50%;
-    font-size: 23px;
-}
-
-.play-button:hover {
-    color: #FF414B;
 }
 </style>
