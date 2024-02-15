@@ -45,7 +45,7 @@ export default {
                             <Dropdown :options="dropdownOptions" />
                         </template> -->
                     </li>
-                    <AppButton @click="goToSchedule" class="btn-small">
+                    <AppButton @pushed="goToSchedule" class="btn-small">
                         Schedule a workout
                     </AppButton>
                     <i class="icon fa fa-search" @click="toggleSearchBar"></i>

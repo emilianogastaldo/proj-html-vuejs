@@ -1,11 +1,12 @@
 <script>
 export default {
-    name: 'AppButton'
+    name: 'AppButton',
+    emits: ['pushed']
 }
 </script>
 
 <template>
-    <button>
+    <button @click="$emit('pushed')">
         <slot></slot>
     </button>
 </template>
