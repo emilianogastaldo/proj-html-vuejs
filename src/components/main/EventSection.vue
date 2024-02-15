@@ -14,7 +14,7 @@ export default {
             <div class="wrapper color-white">
                 <PlayButton />
                 <h2>Crossfit workout of the day</h2>
-                <p>November 15th, 20219</p>
+                <p>November 15th, 2023</p>
                 <a href="#" class="color-white">View all videos <i class="fa-solid fa-arrow-right-long"></i> </a>
             </div>
         </div>
